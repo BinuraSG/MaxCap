@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script src="jquery-3.1.1.min.js"></script>
+        <script src="js.js"></script>
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <script src="https://use.fontawesome.com/f927c00188.js"></script>
+        
+    </head>
+    
+        <body>
+            <style>
+                
+                .fa-cogs{
+                font-size:280%;
+                }
+                
+                .fa-sitemap{
+                font-size:280%;
+                }
+                
+                .fa-mobile{
+                font-size:280%;
+                }
+                
+                .fa-arrow-circle-o-right{
+                font-size:320%;
+                }
+                
+                .arrow .fa-arrow-circle-o-right{
+                font-size:320%;
+                position:absolute;
+                margin-top:164%;
+                margin-left:64%;
+                }
+                
+                .secondfull{
+                width:99.5%;
+                height:auto;
+                position:absolute;
+                margin-top:157%;
+                }
+                .handsome{
+                    position:absolute;
+                    margin-left:21%;
+                    margin-top:96%;
+                }
+                .handsome img{
+                    height:75%;
+                    width:75%;
+                    
+                }
+                .teamcontainer{
+                    background-color:rgba(0,0,0,0.2);
+                    margin-top:190.8%;
+                    position:absolute;
+                    height:30%;
+                    width:100%;
+                    margin-left:-0.5%;
+                    font-family:Saira extra condensed;
+                    color:white;
+                    text-align:center;
+                }
+                .theteam{
+                    margin-left:2%;
+                    margin-top:4%;
+                    font-size:5em;
+                }
+                
+            </style>
+    
+<!-- Full Container (Holds Landing Page - the arrow animation) -->
+                <div class = "fullbackground" id = "yeboi">
+    
+<!-- Navigation menu elements / Logonav is the Maxcap logo -->
+    
+                <div class = "logonav"><img src="Maxcap3.png"></div> 
+    
+                    <div id = "navbarr" class="navbar">
+                        <ul>
+                            <li id = homie class = homer><a href="#home" class="home">Home</a><div class = CT></div><div class = CB></div><div class = CR></div><div class = CL></div></li>
+                            <li id = Aboutie class = newser><a href="#news" class="news">About </a><div class = CTT></div><div class = CBB></div><div class = CRR></div><div class = CLL></div></li>
+                            <li id = contactie class = contacter><a href="contactnew2.html" class="contact">Contact </a><div class = CTTT></div><div class = CBBB></div><div class = CRRR></div><div class = CLLL></div></li>
+                            <li id = teamie class = teamer><a href="#about" class ="team">Team </a><div class = CTTTT></div><div class = CBBBB></div><div class = CRRRR></div><div class = CLLLL></div></li>
+                        </ul>
+                    </div>
+    
+<!-- Maxcap logo that appears on the landing screen and it's container -->
+    
+                    <div id = "maxcapp" class = "maxcap">
+                        <img src="Maxcap3.png">
+                    </div>
+<!-- Scaling "button" with one sample slogan-->
+    
+                    <div class="description"> - Unifying Customer and Service <i class="fa fa-handshake-o" aria-hidden="true"></i>  </div>
+                    <br>
+
+    
+<!-- Important LOGIN Menu container, "get" -->
+                    <div id = "newget" class = "get">
+
+<!-- Employer Login section -->
+                        <div class = "titler">Employer Login </div>
+        
+<!-- Username entry area for employers-->
+                        <div class = "usercontainer">
+                            <div class = "circle"><i class="fa fa-user-circle-o" aria-hidden="true"></i> </div>
+                            <input type="text" id = "usernamee" class = "usern" placeholder = "Username or e-Mail" type="email">
+                        </div>    
+        
+<!-- Password entry area for employers-->
+                        <div class = "passcontainer">     
+                            <div class = "lock"> <i class="fa fa-lock" aria-hidden="true"></i></div><input type="password" id = "passworde" class = "pword" placeholder = "Password">
+                            </div>
+        
+<!-- Login (redirects to sub-page, the employer view, runs JS.JS (ElogIn())) -->
+                        <div id = "submit" class = "submitter" onclick = "ElogIn()"> Login <div class = "checkmark"><i class="fa fa-check" aria-hidden="true"></i></div> </div> 
+        
+<!-- User Login section (currently no redirection location) -->
+                        <div id = "getstarted" class = "getstarty">User Login</div> 
+        
+<!-- Username entry area for customers -->
+                        <div class = "usercontainer">
+                            <div class = "circle"><i class="fa fa-user-circle-o" aria-hidden="true"></i> </div>
+                            <input type="text" id = "username" class = "usern" placeholder = "Username or e-Mail" type="email">
+                        </div>   
+        
+<!-- Password entry area for customers -->
+                        <div class = "passcontainer">     
+                            <div class = "lock"> <i class="fa fa-lock" aria-hidden="true"></i></div>
+                            <input type="password" id = "password" class = "pword" placeholder = "Password">
+                        </div>
+        
+<!-- Non functional redirection page (work in progress) -->
+                        <div id = "submit" class = "submitter" onclick = "logIn()"> Login 
+                            <div class = "checkmark"><i class="fa fa-check" aria-hidden="true"></i></div> 
+                        </div> 
+    
+                    </div>
+
+<!-- Videoplayer redirection link, scrolls down to video -->
+                    <div id ="videoz" class = "videoplayer">
+                        <a href = "#video"> <i class="fa fa-play"></i> </a>
+                    </div>
+    
+                </div>
+            <div id = newscroll class=testing></div>
+            <div class=contentabout></div>
+    
+<!-- Second Container - Holds about page, and company information  -->
+                <div class = secondfull>
+    
+<!-- A very poorly named arrow animation container (holds the three arrows) -->
+                    <div id = scrolltoabout class = "lmao">
+                        <a href="#"class="arrowright"><div class="arrowmover"></div></a>
+                        <a href="#"class="arrowmid"><div class="arrowmoverzz"></div></a>
+                        <a href="#"class="arrowleft"><div class="arrowmoverz"></div></a>
+                    </div>
+    
+<!-- A testing div used for the background of the landing page (it is a translucent black background) -->
+                    
+    
+<!-- A container for the large font "About Us", it is a translucent black as well -->
+                    <div id = aboutpage class = about>About Us</div>
+    
+<!-- A background for the whole about page (it is a near-opaque white background) -->    
+                    
+
+                    <div class=slogancontainer>
+                        <p class=fakeslogan>-- Putting the &nbsp; <b>Fast</b> &nbsp; in Fast Food --</p>
+                        <p class = newcontent>Maxcap is a mobile and web development that allows users to keep an eye on the wait lines of local franchises. <br>Revolutionizing the fast food industry and it's facets is our purpose.</p>
+                    </div>
+    
+<!-- Testimony div, contains Casey Li's testimony and his beautiful face -->
+                    <div id = "casey" class = "caseyli">
+                        <p class = caseytext>"I can definitely see the value of a service of this sort. Maxcap epitomizes time conservation, convenience and <br>brilliance. As a business owner, I cannot afford to waste time at lineups, and Maxcap remedies this situation." </p>
+                        <p class = caseysign> <i>- Casey Li, business magnate, philantropist, living legend, and advocate for a better future. </i></p>
+                    </div>
+    
+                    <p class=methodtitled>Our Method<p>
+
+<!-- Three containers (separate) for the three steps of the Maxcap process -->
+                    <div class = stepone>
+                        <p class = steponetxt><b>Hardware Installation</b></p>
+                        <p class=first><br><br><br><br><br>Cutting edge laser technology sensors are installed at the entrances, that accurately determine the amount of people entering and leaving the store.</p>
+                    </div>
+    
+                    <div class = steptwo>
+                        <p class = steptwotxt><b>Data Storage</b></p>
+                        <p class = second><br><br><br><br><br>This data is uploaded and stored in our secure databases. The information is then processed rigorously and returns very accurately approximated wait times.</p>
+                    </div>
+    
+                    <div class = stepthree>
+                        <p class = stepthreetxt><b>Live Updates</b></p>
+                        <p class = third>The wait times are then updated in real-time on the user interface of the franchise's app. This information is then accessible by the user in a simplified format. </p>
+                    </div>
+    
+<!-- Icons for the about page , the three steps and the arrows -->
+                    <i class="fa fa-cogs" aria-hidden="true"></i>  
+                    <i class="fa fa-sitemap" aria-hidden="true"></i>
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+    
+                    <div class = arrow>
+                        <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                    </div>
+    
+                </div>
+            <div class=handsome><img src="caseyli.png"/></div>
+    
+<!-- Design elements of the about page -->
+                <div class=blackline></div>
+                <div class = verticalone></div>
+                <div class = horizontalone></div>
+                <div class = verticaltwo></div>
+                <div class = horizontaltwo></div>
+    
+<!-- Youtube video container "youtube", and a background div "videocontainer" - (translucent black) -->
+                <div id = "utube" class=youtube>
+                    <iframe width="70%" height="90%" src="https://www.youtube.com/embed/N506QvhTZ80?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+    
+                <div class = videocontainer></div>
+
+                <div class="scroll-progress-container">
+                    <div class="scroll-progress"></div>
+                </div>
+
+            
+<!-- Team Page 5 Members -->
+            
+            <div id = scrollteam class = teamcontainer><p class = theteam>The Team</p></div>
+            <div class = teambackground></div>
+            <style>
+                .teambackground{
+                    margin-top:206%;
+                    background-color:rgba(255,255,255,0.8);
+                    width:100%;
+                    margin-left:-0.5%;
+                    height:128%;
+                    position:absolute;
+                        
+                }
+                    .Shahzaib{
+                        
+                        border-radius:200%;
+                        border:0.3em solid black;
+                        height:41%;
+                        width:21%;
+                        background-color:black;
+                        margin-top:215%;
+                        margin-left:15%;
+                        align-content:center;
+                        position:absolute;
+                        transition: all 500ms ease-in-out;
+                        text-align: center;
+                        }
+                
+                .mem1{
+                    position:absolute;
+                    margin-left:15%;
+                    margin-top:-25%;
+                    font-family:Saira extra condensed;
+                    font-size:3em;
+                    
+                }
+                        .Shahzaib .design{
+                            color:white;
+                            font-family:Saira extra condensed;
+                            font-size:3em;
+                            margin-top:-60%;
+                            opacity:0.0;
+                            transition:all 500ms ease-in-out;
+                        }
+                        .Shahzaib:hover .design{
+                            opacity:1.0;
+                        }
+                        .Shahzaib:hover {
+                              -webkit-transform: scale(1.1);
+                              transform: scale(1.1);
+                              border-color:rgba(255,172,71,1);
+                        }
+                        .Shahzaib img{
+                            border-radius:100%;
+                            margin-top:-0.6%;
+                            margin-left:-0.66%;
+                            height:101%;
+                            width:101%;
+                            transition: all 500ms ease-in-out;
+                            }
+                        .Shahzaib:hover img{
+                            opacity:0.3;
+
+                        }
+                
+                .Shahzaib:hover .fa-github{
+                    opacity:1.0;
+                }
+                .Shahzaib .fa-github{
+                    margin-top:0%;
+                    z-index:300;
+                    opacity:0.0;
+                    margin-left:5%;
+                    color:white;
+                    position:absolute;
+                    transition:all 500ms ease-in-out;
+                    font-size:3em;
+                }
+                .Shahzaib:hover .fa-linkedin-square{
+                    opacity:1.0;
+                }
+                .Shahzaib .fa-linkedin-square{
+                    margin-top:0%;
+                    z-index:300;
+                    opacity:0.0;
+                    margin-left:-13%;
+                    color:white;
+                    position:absolute;
+                    transition:all 500ms ease-in-out;
+                    font-size:3em;
+                }
+                
+                    .Binura{
+                        border-radius:200%;
+                        border:0.3em solid black;
+                        height:40%;
+                        width:20%;
+                        background-color:black;
+                        margin-top:215%;
+                        text-align:center;
+                        margin-left:40%;
+                        position:absolute;
+                        transition: all 500ms ease-in-out;
+                        }
+                .mem2{
+                    position:absolute;
+                    margin-left:15%;
+                    margin-top:-25%;
+                    font-family:Saira extra condensed;
+                    font-size:3em;
+                    
+                }
+                        .Binura:hover {
+                              -webkit-transform: scale(1.1);
+                              transform: scale(1.1);
+                              border-color:rgba(255,172,71,1);
+                        }
+                        .Binura img{
+                            border-radius:100%;
+                            margin-top:-0.6%;
+                            margin-left:-0.46%;
+                            height:101%;
+                            width:101%;
+                            transition:all 500ms ease-in-out;
+                            }
+                        .Binura:hover img{
+                            opacity:0.3;
+
+                        }
+                        .Binura .UXD{
+                            color:white;
+                            font-family:Saira extra condensed;
+                            font-size:3em;
+                            margin-top:-60%;
+                            opacity:0.0;
+                            transition:all 500ms ease-in-out;
+                        }
+                        .Binura:hover .UXD{
+                            opacity:1.0;
+                        }
+                
+                .Binura:hover .fa-github{
+                    opacity:1.0;
+                }
+                .Binura .fa-github{
+                    margin-top:0%;
+                    z-index:300;
+                    opacity:0.0;
+                    margin-left:5%;
+                    color:white;
+                    position:absolute;
+                    transition:all 500ms ease-in-out;
+                    font-size:3em;
+                }
+                .Binura:hover .fa-linkedin-square{
+                    opacity:1.0;
+                }
+                .Binura .fa-linkedin-square{
+                    margin-top:0%;
+                    z-index:300;
+                    opacity:0.0;
+                    margin-left:-13%;
+                    color:white;
+                    position:absolute;
+                    transition:all 500ms ease-in-out;
+                    font-size:3em;
+                }
+                    .Ellen{
+                        border-radius:200%;
+                        border:0.3em solid black;
+                        height:40%;
+                        width:20%;
+                        background-color:black;
+                        margin-top:215%;
+                        margin-left:65%;
+                        text-align:center;
+                        position:absolute;
+                        transition: all 500ms ease-in-out;
+                        }
+                
+                .mem3{
+                    position:absolute;
+                    margin-left:38%;
+                    margin-top:-25%;
+                    font-family:Saira extra condensed;
+                    font-size:3em;
+                    
+                }
+                        .Ellen:hover {
+                              -webkit-transform: scale(1.1);
+                              transform: scale(1.1);
+                              border-color:rgba(255,172,71,1);
+                        }
+                        .Ellen:hover img{
+                            opacity:0.3;
+
+                        }
+                        .Ellen .production{
+                            color:white;
+                            font-family:Saira extra condensed;
+                            font-size:3em;
+                            margin-top:-60%;
+                            opacity:0.0;
+                            transition:all 500ms ease-in-out;
+                        }
+                        .Ellen:hover .production{
+                            opacity:1.0;
+                        }
+                            .Ellen img{
+                                border-radius:100%;
+                                margin-top:-0.6%;
+                                margin-left:-0.46%;
+                                height:101%;
+                                width:101%;
+                                transition:all 500ms ease-in-out;
+                                }
+                
+                .Ellen:hover .fa-github{
+                    opacity:1.0;
+                }
+                .Ellen .fa-github{
+                    margin-top:0%;
+                    z-index:300;
+                    opacity:0.0;
+                    margin-left:5%;
+                    color:white;
+                    position:absolute;
+                    transition:all 500ms ease-in-out;
+                    font-size:3em;
+                }
+                .Ellen:hover .fa-linkedin-square{
+                    opacity:1.0;
+                }
+                .Ellen .fa-linkedin-square{
+                    margin-top:0%;
+                    z-index:300;
+                    opacity:0.0;
+                    margin-left:-13%;
+                    color:white;
+                    position:absolute;
+                    transition:all 500ms ease-in-out;
+                    font-size:3em;
+                }
+                
+                    .Siva{
+                        border-radius:200px;
+                        border:0.3em solid black;
+                        height:40%;
+                        width:20%;
+                        background-color:black;
+                        margin-top:242%;
+                        margin-left:27%;
+                        text-align:center;
+                        position:absolute;
+                        transition: all 500ms ease-in-out;
+                        }
+                        .Siva:hover {
+                              -webkit-transform: scale(1.1);
+                              transform: scale(1.1);
+                              border-color:rgba(255,172,71,1);
+                        }
+                        .Siva:hover img{
+                            opacity:0.3;
+
+                        }
+                        .Siva .business{
+                            color:white;
+                            font-family:Saira extra condensed;
+                            font-size:3em;
+                            margin-top:-60%;
+                            opacity:0.0;
+                            transition:all 500ms ease-in-out;
+                        }
+                        .Siva:hover .business{
+                            opacity:1.0;
+                        }
+                        .Siva img{
+                            border-radius:100%;
+                            margin-top:-0.6%;
+                            margin-left:-0.46%;
+                            height:101%;
+                            width:101%;
+                            transition:all 500ms ease-in-out;
+                                }
+                
+                .Siva:hover .fa-github{
+                    opacity:1.0;
+                }
+                .Siva .fa-github{
+                    margin-top:0%;
+                    z-index:300;
+                    opacity:0.0;
+                    margin-left:5%;
+                    color:white;
+                    position:absolute;
+                    transition:all 500ms ease-in-out;
+                    font-size:3em;
+                }
+                .Siva:hover .fa-linkedin-square{
+                    opacity:1.0;
+                }
+                .Siva .fa-linkedin-square{
+                    margin-top:0%;
+                    z-index:300;
+                    opacity:0.0;
+                    margin-left:-13%;
+                    color:white;
+                    position:absolute;
+                    transition:all 500ms ease-in-out;
+                    font-size:3em;
+                }
+                
+                .mem4{
+                    position:absolute;
+                    margin-left:4%;
+                    margin-top:-25%;
+                    font-family:Saira extra condensed;
+                    font-size:3em;
+                    
+                }
+                
+                    .Sebastien{
+                        border-radius:200px;
+                        border:0.3em solid black;
+                        height:40%;
+                        width:20%;
+                        z-index:0;
+                        background-color:black;
+                        margin-top:242%;
+                        margin-left:53%;
+                        text-align:center;
+                        position:absolute;
+                        transition: all 500ms ease-in-out;
+                        }
+                
+                .mem5{
+                    position:absolute;
+                    margin-left:15%;
+                    margin-top:-25%;
+                    font-family:Saira extra condensed;
+                    font-size:3em;
+                    
+                }
+                        .Sebastien:hover {
+                              -webkit-transform: scale(1.1);
+                              transform: scale(1.1);
+                              border-color:rgba(255,172,71,1);
+                        }
+                        .Sebastien:hover img{
+                            opacity:0.3;
+
+                        }
+                        .Sebastien .LB{
+                            color:white;
+                            font-family:Saira extra condensed;
+                            font-size:3em;
+                            margin-top:-60%;
+                            margin-left:0;
+                            opacity:0.0;
+                            z-index:200;
+                            
+                            transition:all 500ms ease-in-out;
+                        }
+                        .Sebastien:hover .LB{
+                            opacity:1.0;
+                        }
+                        .Sebastien img{
+                            border-radius:100%;
+                            margin-top:-0.6%;
+                            margin-left:-0.46%;
+                            height:101%;
+                            width:101%;
+                            transition:all 500ms ease-in-out;
+                            }
+                /** Icon Animations / Implementations **/
+                
+                .Sebastien:hover .fa-github{
+                    opacity:1.0;
+                }
+                .Sebastien .fa-github{
+                    margin-top:0%;
+                    z-index:300;
+                    opacity:0.0;
+                    margin-left:5%;
+                    color:white;
+                    position:absolute;
+                    transition:all 500ms ease-in-out;
+                    font-size:3em;
+                }
+                .fa-github:hover {
+                    color:#FFAC47;
+                }
+                .Sebastien:hover .fa-linkedin-square{
+                    opacity:1.0;
+                }
+                .Sebastien .fa-linkedin-square{
+                    margin-top:0%;
+                    z-index:300;
+                    opacity:0.0;
+                    margin-left:-13%;
+                    color:white;
+                    position:absolute;
+                    transition:all 500ms ease-in-out;
+                    font-size:3em;
+                }
+                .fa-linkedin-square:hover {
+                    color:#FFAC47;
+                }
+                        
+                /** BOTTOM BAR **/
+                .bottombar{
+            margin-left:-.5%;
+            position:absolute;
+            margin-top:270%;
+            height:30%;
+            width:100%;
+            background: linear-gradient(227deg, #07273D, #0C0C17, #07273D);
+            background-size: 400% 400%;
+
+            animation: coolgradient 5s ease infinite;
+
+            
+        }
+        .bottombar p1{
+            font-family:Saira Extra condensed;
+            color:white;
+            font-size:1.5em;
+            position:absolute;
+            margin-left:47%;
+            margin-top:7.9%;
+        }
+        .bottombar p2{
+            font-family:Saira Extra condensed;
+            color:white;
+            font-size:1em;
+            position:absolute;
+            margin-left:50%;
+            margin-top:5.7%;
+        }
+        .bottombar p3{
+            font-family:Saira Extra condensed;
+            color:white;
+            font-size:1.15em;
+            position:absolute;
+            margin-left:50.3%;
+            margin-top:10.5%;
+         
+        }
+        @keyframes coolgradient { 
+        0%{background-position:50% 0%}
+        50%{background-position:51% 100%}
+        100%{background-position:50% 0%}
+        }
+         .facebookholder{
+            border-radius:1000%;
+            width:2em;
+            height:2em;
+            position:absolute;
+            margin-left:52.6%;
+            margin-top:2.2%;
+            transition: all 500ms ease-in-out;
+        }
+        .facebookholder:hover{
+            background-color:white;
+        }
+        .facebookholder:hover .fa-facebook{
+            color:#2F5A9E;
+        }
+        .fa-facebook{
+            color:white;
+            font-size:1.6em;
+            margin-top:4.5px;
+            margin-left:22%;
+            position:absolute;
+            transition: all 500ms ease-in-out;
+        }
+        .twitterholder{
+            border-radius:1000%;
+            width:2em;
+            height:2em;
+            position:absolute;
+            margin-left:49%;
+            margin-top:2.2%;
+            transition: all 500ms ease-in-out;
+        }
+        .twitterholder:hover{
+            background-color:white;
+        }
+        .twitterholder:hover .fa-twitter{
+            color:#407ad6;
+        }
+        .fa-twitter{
+            color:white;
+            font-size:1.6em;
+            margin-top:20%;
+            margin-left:10%;
+            position:absolute;
+            transition: all 500ms ease-in-out;
+        }
+    
+        
+                    
+                </style>
+                
+            <div class = Shahzaib><p class=mem1>Shahzaib Sahibzada</p><img src="Shah.jpg"/><p class = design>Designs Specialist</p><i class="fa fa-github" aria-hidden="true"></i><i class="fa fa-linkedin-square" aria-hidden="true"></i></div>
+                <div class = Binura><p class=mem2>Binura Gunasekera</p><img src="SGG.jpg"/><p class= UXD>Lead Designer</p><i class="fa fa-github" aria-hidden="true"></i><i class="fa fa-linkedin-square" aria-hidden="true"></i></div>
+                <div class = Ellen><p class=mem3>Ellen Li</p><img src="Ellen.jpg"/><p class = production>Production Lead</p><i class="fa fa-github" aria-hidden="true"></i><i class="fa fa-linkedin-square" aria-hidden="true"></i></div>
+                <div class = Siva><p class=mem4>Sivakumar Tharmendrah</p><img src="sivaa.png"/><p class = business>Business Exec.</p><i class="fa fa-github" aria-hidden="true"></i><i class="fa fa-linkedin-square" aria-hidden="true"></i></div>
+                <div class = Sebastien><p class=mem5>Sébastien Gorman</p><img src="Seb.png"/><p class = LB>Business Lead</p><i class="fa fa-github" aria-hidden="true"></i><i class="fa fa-linkedin-square" aria-hidden="true"></i></div>
+            
+    <!-- BOTTOM BAR -->
+            
+                <div class = bottombar>
+                    <div class = twitterholder>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </div>
+                    <div class = facebookholder>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </div>
+                        <p2>The Ultimate</p2>
+                        <p1>A MaxCap Development</p1> 
+                        <p3>Software</p3>
+                    
+                </div>
+        </body>
+</html>
+
